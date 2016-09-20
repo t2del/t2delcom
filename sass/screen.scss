@@ -1,0 +1,257 @@
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#fff;
+	font-size:90%;
+	font:16px/26px "Roboto", Helvetica, Arial, sans-serif;
+}
+a {
+	color:#369;
+	text-decoration:none;
+}
+a:hover {
+	color:#fff;
+	background:#369;
+	text-decoration:none;
+}
+
+p {
+	margin:.4em 0 .8em 0;
+	padding:0;
+}
+img {
+	margin:10px 0 5px;
+}
+#ads img {
+	display:block;
+	padding-top:10px;
+}
+
+/* Header styles */
+/*header {
+	clear:both;
+	float:left;
+	width:100%;
+}
+header {
+	border-bottom:2px solid #ddd;
+}
+header p,
+header h1,
+header h2 {
+	padding:.4em 15px 0 15px;
+	margin:0;
+}
+header ul {
+	clear:left;
+	float:left;
+	width:100%;
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+header ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+header ul li a {
+	display:block;
+	float:left;
+	margin:0 0 0 1px;
+	padding:8px 10px;
+	text-align:center;
+	background:#eee;
+	color:#000;
+	text-decoration:none;
+	position:relative;
+	left:15px;
+	line-height:1.3em;
+}
+header ul li a:hover {
+	background:#369;
+	color:#fff;
+}
+header ul li a.active,
+header ul li a.active:hover {
+	color:#fff;
+	background:#000;
+	font-weight:bold;
+}
+header ul li a span {
+	display:block;
+}*/
+
+header {
+	width: 100%;
+	a {
+		padding-left: 15px;
+		color: #369;
+		background: none;
+	}
+	a:hover {
+		padding-left: 15px;
+		color: #369;
+		background: none;		
+	}
+}
+
+
+
+/* 'widths' sub menu */
+#layoutdims {
+	clear:both;
+	background:#eee;
+	border-top:2px solid #ddd;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+	.page_title {
+		float: left;
+		h3 {
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+}
+
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+	background:#fff;		/* right column background colour */
+}
+.leftmenu .colleft {
+	right:85%;			/* right column width */
+	background:#f4f4f4;	/* left column background colour */
+}
+.leftmenu .col1 {
+	width:77%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.leftmenu .col2 {
+	width:17%;			/* left column content width (column width minus left and right padding) */
+	left:6%;			/* (right column left and right padding) plus (left column left padding) */
+	
+}
+/* Footer styles */
+footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:2px solid #ddd;
+	
+	a {
+		color: #369;
+		background: none;
+	}
+	a:hover {
+		color: #369;
+		background: none;
+		text-decoration: underline;
+	}
+	.footer_contact {
+		float: right;
+	}
+	.footer_copyright {
+		float: left;
+	}
+	p {
+		padding:10px;
+		margin:0;
+	}
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.invisible {
+  visibility: hidden;
+}
+
+nav {
+	min-width: 180px;
+	float:left;
+	background: #f4f4f4;
+	display: block;
+	position:static;
+}
+
+.main {
+	width: 95%;
+	padding-left: 5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	a {
+		color: #369;
+		background: none;
+		&:hover {
+			color: #369;
+			background: none;
+			text-decoration: underline;
+		}
+	}
+}
+
+.navbar {
+	margin-bottom: 10px;
+}
+
+nav a {
+	font-weight:bold;
+	display: block;
+	padding: 8px 4px;
+	text-align: right;
+	padding-right: 10px;
+	margin-bottom: 5px;
+}
+
+._left  { float:left; }
+._right { float:right; }
+
+
+@media (max-width: 497px) {
+	#layoutdims {
+		.social-network {
+			float: right;
+		}
+		.page_title {
+			float: left;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* line 1, ../sass/nav-bar.scss */
+.navbar .brand {
+  padding: 0 10px;
+}
+
+/* line 4, ../sass/nav-bar.scss */
+.navbar .nav > li > a {
+  padding: 10px 15px;
+}
+
+/* line 7, ../sass/nav-bar.scss */
+.navbar .btn-navbar {
+  float: left;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 12, ../sass/nav-bar.scss */
+.brand img {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  /* line 16, ../sass/nav-bar.scss */
+  .brand img {
+    margin-bottom: 5px;
+  }
+
+  /* line 21, ../sass/nav-bar.scss */
+  .navbar .nav > li > a {
+    padding: 10px 15px;
+  }
+}
+/* line 26, ../sass/nav-bar.scss */
+.navbar .nav > li > a {
+  color: #369;
+  background: white;
+  font-size: 1.2em;
+}
+/* line 30, ../sass/nav-bar.scss */
+.navbar .nav > li > a:hover {
+  color: white;
+  background: #369;
+}

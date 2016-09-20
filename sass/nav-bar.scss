@@ -1,0 +1,35 @@
+.navbar .brand {
+    padding: 0 10px;
+}
+.navbar .nav > li > a {
+    padding: 10px 15px;
+}
+.navbar .btn-navbar {
+	float: left;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.brand img{
+    margin-top: 5px
+}
+@media (max-width:768px) {
+    .brand img{
+        margin-bottom: 5px
+    }
+    .navbar .btn-navbar{
+    }
+    .navbar .nav > li > a {
+        padding: 10px 15px;
+    }
+}
+
+.navbar .nav > li > a {
+	color: #369;
+	background: white; 
+	font-size: 1.2em;
+	&:hover {
+		color: white;
+		background: #369;
+	}
+}
+
