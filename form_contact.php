@@ -4,13 +4,22 @@ if ( isset ( $_POST [ 'submit' ] ))
 	$to = 'macapagal.dennis@gmail.com, xynned@gmail.com' ; // REPLACE THE LINE BELOW WITH YOUR E-MAIL ADDRESS.
 	$phone = $_POST['phone'];
 	$name = ucfirst($_POST['name']);
-	$subject = "Inquiry by: ".$name. " Phone: ".$phone;
+	$message_display = $_POST["message"];
 	$from = $_POST['email'];
-	$message = $_POST [ "message" ] ;
-	$headers = 'From: ' . $from . PHP_EOL ; // NOT SUGGESTED TO CHANGE THESE VALUES
+	$subject = "<t2del.com> Inquiry by: ".$name. " <".$from. ">";
+	ob_start(); ?>
+    <div style="visibility:hidden; height:0px;">
+    	<?php include "email.php"; ?>
+    </div>
+    <?php 
+    $message = ob_get_flush();
+	//$headers = 'From: ' . $from . PHP_EOL ; // NOT SUGGESTED TO CHANGE THESE VALUES
+	$headers = "From: t2deldotcom <dennismacapagal@t2del.com>\r\n". 
+               "MIME-Version: 1.0" . "\r\n" . 
+               "Content-type: text/html; charset=UTF-8" . "\r\n";
 	if(mail ( $to, $subject, $message, $headers )) 
 	{
-		echo "Thank you! Your e-mail has been sent and should receive a reply within 24 hours!" ;
+		echo "<script> alert('Thank you! Your e-mail has been sent and should receive a reply within 24 hours!'); </script>" ;
 	}
 }
 ?>

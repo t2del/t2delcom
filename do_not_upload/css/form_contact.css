@@ -1,27 +1,62 @@
-/* line 3, ../sass/form_contact.scss */
-.form-container, .form-contact {
-  max-width: 350px;
-  min-width: 315px;
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  float: left;
   display: block;
   position: relative;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
   margin: 0 10px 20px 10px;
+
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-}
-/* line 11, ../sass/form_contact.scss */
-.form-container *, .form-contact * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+* {
+	margin: 0;
+	padding: 0;
+				box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	   -moz-font-smoothing: antialiased;
+		 -o-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+	}
+  
 }
 
-/* line 26, ../sass/form_contact.scss */
+.contact_info {
+	float: left;
+	margin: 0 10px 10px 10px;
+	background: #F9F9F9;
+	padding: 10px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	
+	._info {
+		min-width: 200px;
+		max-width: 240px;
+		text-align: right;
+	}
+	._social {
+		min-width: 300px;
+		max-width: 350px;
+	}
+	
+	h3 {
+  	display: block;
+	font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	}
+	h4 {
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	}
+}
+
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -31,14 +66,15 @@
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
-/* line 35, ../sass/form_contact.scss */
-.boxify {
+
+
+
+#contact {
   background: #F9F9F9;
-  padding: 10px 20px 20px 20px;
+  padding: 10px 50px 20px 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-/* line 41, ../sass/form_contact.scss */
 #contact h3 {
   display: block;
   font-size: 30px;
@@ -46,7 +82,6 @@
   margin-bottom: 10px;
 }
 
-/* line 48, ../sass/form_contact.scss */
 #contact h4 {
   margin: 5px 0 15px;
   display: block;
@@ -54,7 +89,6 @@
   font-weight: 400;
 }
 
-/* line 55, ../sass/form_contact.scss */
 fieldset {
   border: medium none !important;
   margin: 0 0 10px;
@@ -63,7 +97,6 @@ fieldset {
   width: 100%;
 }
 
-/* line 63, ../sass/form_contact.scss */
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -73,10 +106,9 @@ fieldset {
   border: 1px solid #ccc;
   background: #FFF;
   margin: 0 0 5px;
-  padding: 15px;
+  padding: 10px;
 }
 
-/* line 75, ../sass/form_contact.scss */
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
@@ -88,14 +120,12 @@ fieldset {
   border: 1px solid #aaa;
 }
 
-/* line 86, ../sass/form_contact.scss */
 #contact textarea {
-  height: 180px;
+  height: 100px;
   max-width: 100%;
   resize: none;
 }
 
-/* line 92, ../sass/form_contact.scss */
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
@@ -107,7 +137,6 @@ fieldset {
   font-size: 15px;
 }
 
-/* line 103, ../sass/form_contact.scss */
 #contact button[type="submit"]:hover {
   background: #369;
   -webkit-transition: background 0.3s ease-in-out;
@@ -115,52 +144,32 @@ fieldset {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 110, ../sass/form_contact.scss */
 #contact button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* line 114, ../sass/form_contact.scss */
 .copyright {
   text-align: center;
 }
 
-/* line 118, ../sass/form_contact.scss */
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
   border: 1px solid #aaa;
 }
 
-/* line 124, ../sass/form_contact.scss */
 ::-webkit-input-placeholder {
   color: #888;
 }
 
-/* line 128, ../sass/form_contact.scss */
 :-moz-placeholder {
   color: #888;
 }
 
-/* line 132, ../sass/form_contact.scss */
 ::-moz-placeholder {
   color: #888;
 }
 
-/* line 136, ../sass/form_contact.scss */
 :-ms-input-placeholder {
   color: #888;
-}
-
-@media (max-width: 725px) {
-  /* line 141, ../sass/form_contact.scss */
-  .form-container, .form-contact {
-    margin: auto;
-    margin-bottom: 20px;
-  }
-
-  /* line 145, ../sass/form_contact.scss */
-  ._left {
-    float: none;
-  }
 }

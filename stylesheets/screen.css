@@ -5,7 +5,7 @@ body {
   border: 0;
   /* This removes the border around the viewport in old versions of IE */
   width: 100%;
-  background: #fff;
+  background: #f2f2f2;
   font-size: 90%;
   font: 16px/26px "Roboto", Helvetica, Arial, sans-serif;
 }
@@ -41,71 +41,27 @@ img {
 }
 
 /* Header styles */
-/*header {
-	clear:both;
-	float:left;
-	width:100%;
-}
-header {
-	border-bottom:2px solid #ddd;
-}
-header p,
-header h1,
-header h2 {
-	padding:.4em 15px 0 15px;
-	margin:0;
-}
-header ul {
-	clear:left;
-	float:left;
-	width:100%;
-	list-style:none;
-	margin:10px 0 0 0;
-	padding:0;
-}
-header ul li {
-	display:inline;
-	list-style:none;
-	margin:0;
-	padding:0;
-}
-header ul li a {
-	display:block;
-	float:left;
-	margin:0 0 0 1px;
-	padding:8px 10px;
-	text-align:center;
-	background:#eee;
-	color:#000;
-	text-decoration:none;
-	position:relative;
-	left:15px;
-	line-height:1.3em;
-}
-header ul li a:hover {
-	background:#369;
-	color:#fff;
-}
-header ul li a.active,
-header ul li a.active:hover {
-	color:#fff;
-	background:#000;
-	font-weight:bold;
-}
-header ul li a span {
-	display:block;
-}*/
-/* line 88, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 header {
   width: 100%;
 }
-/* line 90, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
+header .title {
+  float: left;
+}
+/* line 38, ../sass/screen.scss */
+header .contact_info {
+  font-size: .9em;
+  margin-right: 10px;
+  float: right;
+}
+/* line 43, ../sass/screen.scss */
 header a {
   padding-left: 15px;
   color: #369;
   background: none;
 }
-/* line 95, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 header a:hover {
   padding-left: 15px;
   color: #369;
@@ -113,7 +69,7 @@ header a:hover {
 }
 
 /* 'widths' sub menu */
-/* line 105, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #layoutdims {
   clear: both;
   background: #eee;
@@ -122,138 +78,71 @@ header a:hover {
   padding: 6px 15px !important;
   text-align: right;
 }
-/* line 112, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #layoutdims .page_title {
   float: left;
 }
-/* line 114, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 #layoutdims .page_title h3 {
   padding: 0px;
   margin: 0px;
 }
 
-/* column container */
-/* line 122, ../sass/screen.scss */
-.colmask {
-  position: relative;
-  /* This fixes the IE7 overflow hidden bug */
-  clear: both;
-  float: left;
-  width: 100%;
-  /* width of whole page */
-  overflow: hidden;
-  /* This chops off any overhanging divs */
-}
-
-/* common column settings */
-/* line 130, ../sass/screen.scss */
-.colright,
-.colmid,
-.colleft {
-  float: left;
-  width: 100%;
-  position: relative;
-}
-
-/* line 137, ../sass/screen.scss */
-.col1,
-.col2,
-.col3 {
-  float: left;
-  position: relative;
-  padding: 0 0 1em 0;
-  overflow: hidden;
-}
-
-/* 2 Column (left menu) settings */
-/* line 146, ../sass/screen.scss */
-.leftmenu {
-  background: #fff;
-  /* right column background colour */
-}
-
-/* line 149, ../sass/screen.scss */
-.leftmenu .colleft {
-  right: 85%;
-  /* right column width */
-  background: #f4f4f4;
-  /* left column background colour */
-}
-
-/* line 153, ../sass/screen.scss */
-.leftmenu .col1 {
-  width: 77%;
-  /* right column content width */
-  left: 102%;
-  /* 100% plus left column left padding */
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-/* line 159, ../sass/screen.scss */
-.leftmenu .col2 {
-  width: 17%;
-  /* left column content width (column width minus left and right padding) */
-  left: 6%;
-  /* (right column left and right padding) plus (left column left padding) */
-}
-
 /* Footer styles */
-/* line 165, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 footer {
   clear: both;
-  float: left;
   width: 100%;
   border-top: 2px solid #ddd;
 }
-/* line 171, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 footer a {
   color: #369;
   background: none;
 }
-/* line 175, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 footer a:hover {
   color: #369;
   background: none;
   text-decoration: underline;
 }
-/* line 180, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 footer .footer_contact {
   float: right;
 }
-/* line 183, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 footer .footer_copyright {
   float: left;
 }
-/* line 186, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 footer p {
   padding: 10px;
   margin: 0;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 nav {
   min-width: 180px;
   float: left;
@@ -262,31 +151,32 @@ nav {
   position: static;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .main {
-  width: 95%;
+  width: 93%;
   padding-left: 5%;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 10px;
 }
-/* line 220, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .main a {
   color: #369;
   background: none;
 }
-/* line 223, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .main a:hover {
   color: #369;
   background: none;
   text-decoration: underline;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .navbar {
   margin-bottom: 10px;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 nav a {
   font-weight: bold;
   display: block;
@@ -296,23 +186,48 @@ nav a {
   margin-bottom: 5px;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 ._left {
   float: left;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 ._right {
   float: right;
 }
 
+/* line 156, ../sass/screen.scss */
+.text_left {
+  text-align: left;
+}
+
+/* line 157, ../sass/screen.scss */
+.text_right {
+  text-align: right;
+}
+
 @media (max-width: 497px) {
-  /* line 250, ../sass/screen.scss */
+  /* line 162, ../sass/screen.scss */
   #layoutdims .social-network {
     float: right;
   }
-  /* line 253, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   #layoutdims .page_title {
     float: left;
+  }
+}
+/* line 171, ../sass/screen.scss */
+.container {
+  width: 100%;
+  background: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (min-width: 1000px) {
+  /* line 179, ../sass/screen.scss */
+  .container {
+    max-width: 950px;
+    margin: auto;
   }
 }

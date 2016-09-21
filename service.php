@@ -5,13 +5,15 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <?php include('header.php'); ?>
 <body>
-<?php 
-	include('t2del.php');
-	include('navigation.php'); 
-?>
-    <div class="main clearfix">
-		<p><a href="#">Website Design</a> - <a href="#">Web Development</a> - <a href="#">SEO</a> - </p>
+    <div class="container">
+        <?php 
+        include('t2del.php');
+        include('navigation.php'); 
+        ?>
+        <div class="main clearfix">
+                <p><a href="#">Website Design</a> - <a href="#">Web Development</a> - <a href="#">SEO</a> - </p>
+        </div>
+        <?php include('footer.php'); ?>
     </div>
-	<?php include('footer.php'); ?>
 </body>
 </html>

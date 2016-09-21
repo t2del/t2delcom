@@ -1,3 +1,4 @@
+<?php include('confg.php'); ?>
     <div class="navbar">
         <div class="navbar-inner">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -15,17 +16,6 @@
 					<li><a href="contact">Contact</a></li>
                 </ul>
             </div>
-            <?php 
-				$basefile=basename($_SERVER['PHP_SELF'], ".php");
-				$msg="";
-				if($basefile=='index') { $msg = 'Welcome!'; }
-				if($basefile=='about') { $msg = 'Welcome!'; } 
-				if($basefile=='service') { $msg = 'Services we offer!'; } 
-				if($basefile=='project') { $msg = 'Our Project!'; } 
-				if($basefile=='client') { $msg = 'Our Client!'; }
-				if($basefile=='contact') { $msg = 'Contact Us!'; }
-				if($basefile=='404') { $msg = 'Error 404!'; } 
-			?>
             <div id="layoutdims" class="clearfix">
             	<div class="page_title">
                 	<h3><?php  echo $msg; ?></h3>
